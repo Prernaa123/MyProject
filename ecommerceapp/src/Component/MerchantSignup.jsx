@@ -3,7 +3,7 @@ import '../styles/Merchantsignup.css'
 import axios from "axios";
 
 const MerchantSignup = () => {
-    let[name,setname]=useState("")
+    let [name,setname]=useState("")
     let [email,setemail]=useState("")
     let [phone,setphone]=useState("")
     let [password,setpassword]=useState("")
