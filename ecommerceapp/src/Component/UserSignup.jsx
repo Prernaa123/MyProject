@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Form } from "react-bootstrap";
 import axios from "axios";
+import '../styles/Usersignup.css'
 
 const UserSignup = () => {
     let[name,setname]=useState("")
@@ -28,9 +29,9 @@ const UserSignup = () => {
     return ( 
         
               <div className="userLogin">
-        <h1><b><i>User login Page</i></b></h1>
-
+       
               <Form onSubmit={addUser}>
+              <h1><b><i>User login Page</i></b></h1>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                     <Form.Label>Name</Form.Label>
                     <Form.Control required value={name} onChange={(e)=>setname(e.target.value)}  type="text" placeholder="Enter name" />

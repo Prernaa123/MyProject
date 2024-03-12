@@ -53,4 +53,9 @@ public class MerchantDao {
 	public Optional<Merchant> findByEmail(String email) {
 		return merchantRepository.findByEmail(email);
 	}
+
+	public Optional<Merchant> findByToken(String token) {
+		return merchantRepository.findByToken(token);
+	
+	}
 }

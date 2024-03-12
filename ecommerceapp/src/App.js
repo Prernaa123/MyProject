@@ -8,16 +8,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MerchantHomePage from './Component/MerchantHomePage';
 import UserHomePage from './Component/UserHomePage';
 import UserSignup from './Component/UserSignup';
+import Error from './Component/Error';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage/>}/>
+          <Route path="/*" element={<Error/>}/>
           <Route path="/user" element={<UserLogin/>}/>
           <Route path="/merchant"element={<MerchantLogin/>}/>
           <Route path="/merchantsignup"element={<MerchantSignup/>}/>
-          <Route path="/merchanthomepage"element={<MerchantHomePage/>}/>
+          <Route path="/merchanthomepage/*"element={<MerchantHomePage/>}/>
           <Route path="/userhomepage" element={<UserHomePage/>}/>
           <Route path="/usersignup" element={<UserSignup/>}/>
 

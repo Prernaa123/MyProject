@@ -22,9 +22,10 @@ const MerchantLogin=()=>{
 
     return ( 
         <div className="merchantLogin">
-        <h1><b><i>Merchant login Page</i></b></h1>
+        
 
               <Form onSubmit={verifyMerchant}>
+              <h1><b><i>Merchant login Page</i></b></h1>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control required value={email} onChange={(e)=>setEmail(e.target.value)}  type="email" placeholder="Enter email" />
